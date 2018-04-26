@@ -1,10 +1,228 @@
+/* Yeseva */
 @font-face {
-	font-family:"Open Sans";
+	font-family:"Yeseva";
 	font-weight:normal;
 	font-style:normal;
-	src:url("../assets/fonts/Open_Sans/OpenSans-Light.ttf");
+	src:url("fonts/yeseva-one/ttf/YesevaOne-Regular.ttf");
+}
+
+/* PT Sans */
+@font-face {
+	font-family:"PT Sans";
+	font-weight:normal;
+	font-style:normal;
+	src:url("fonts/pt-sans/ttf/PT_Sans-Web-Regular.ttf");
+}
+
+@font-face {
+	font-family:"PT Sans";
+	font-weight:normal;
+	font-style:italic;
+	src:url("fonts/pt-sans/ttf/PT_Sans-Web-Italic.ttf");
+}
+
+@font-face {
+	font-family:"PT Sans";
+	font-weight:bold;
+	font-style:normal;
+	src:url("fonts/pt-sans/ttf/PT_Sans-Web-Bold.ttf");
+}
+
+@font-face {
+	font-family:"PT Sans";
+	font-weight:bold;
+	font-style:italic;
+	src:url("fonts/pt-sans/ttf/PT_Sans-Web-BoldItalic.ttf");
+}
+
+/* Pt Serif */
+@font-face {
+	font-family:"PT Serif";
+	font-weight:normal;
+	font-style:normal;
+	src:url("fonts/pt-sans/ttf/PT_Serif-Web-Regular.ttf");
+}
+
+@font-face {
+	font-family:"PT Serif";
+	font-weight:normal;
+	font-style:italic;
+	src:url("fonts/pt-sans/ttf/PT_Serif-Web-Italic.ttf");
+}
+
+@font-face {
+	font-family:"PT Serif";
+	font-weight:bold;
+	font-style:normal;
+	src:url("fonts/pt-sans/ttf/PT_Serif-Web-Bold.ttf");
+}
+
+@font-face {
+	font-family:"PT Serif";
+	font-weight:bold;
+	font-style:italic;
+	src:url("fonts/pt-sans/ttf/PT_Serif-Web-BoldItalic.ttf");
 }
 
 body {
-	background-color:white;
+	color:white;
+	background-color:black;
+
+	font-family:"PT Sans", Helvetica, Arial, sans-serif;
+	font-size:13pt;
+	text-shadow:0 0 1px rgba(0, 0, 0, 0.27), 0 0 0.5em rgba(0, 0, 0, 0.13);
 }
+
+#backdrop {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+
+	z-index:-1;
+	opacity:0.92;
+
+	background-image:url("assets/background.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0 0 0.5em;
+	text-shadow:0 0 2px rgba(0, 0, 0, 0.27), 0 0 0.5em rgba(0, 0, 0, 0.07);
+}
+
+h1, h3, h5,
+article > p,
+article > ul > li {
+	font-family:"PT Serif", Times, serif;
+}
+
+h2, h4, h6,
+label,
+article > ul > li > label {
+	font-family:"PT Sans", Times, serif;
+}
+
+h1 {
+	font-size:32pt;
+}
+
+h2 {
+	font-size:24pt;
+}
+
+h3 {
+	font-size:22pt;
+};
+
+h4 {
+	font-size:18pt;
+}
+
+h5 {
+	font-size:16pt;
+}
+
+h6 {
+	font-size:15pt;
+}
+
+a {
+	color:white;
+}
+
+p {
+	margin:20pt 0 40pt;
+}
+
+label {
+	font-weight:bold;
+}
+
+label::after {
+	content:":";
+	padding-right:0.5em;
+}
+
+ul {
+	list-style:none;
+	margin:20pt 0;
+	padding-left:60pt;
+}
+
+header, article {
+	margin:0 auto;
+	padding:30pt 20pt 0;
+}
+
+header {
+	max-width:920px;
+	color:white;
+	border-bottom:2px solid white;
+	padding-bottom:20pt;
+}
+
+article {
+	max-width:720px;
+}
+
+header h1, header h2 {
+	display:inline-block;
+}
+
+header h1 {
+	font-size:52pt;
+	font-family:Yeseva;
+	font-weight:normal;
+	letter-spacing:-3px;
+}
+
+header h1::first-letter {
+	letter-spacing:-8px;
+}
+
+header h2 {
+	text-align:right;
+	font-weight:normal;
+	font-size:20pt;
+}
+
+article > p {
+	font-size:26pt;
+}
+
+article > ul {
+	font-size:18pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

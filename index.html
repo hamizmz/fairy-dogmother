@@ -2,17 +2,63 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no">-->
 		<meta name="description" content="">
 
 		<title>Fairy Dogmother</title>
+		<script type="text/javascript">
+			(() => {
+				let content = 'initial-scale=';
+				content += 1 / window.devicePixelRatio;
+				content += ',user-scalable=no';
+
+				let meta = document.createElement("meta");
+				meta.setAttribute('name','viewport');
+				meta.setAttribute('content', content);
+				document.getElementsByTagName('head')[0].appendChild(meta);
+			})();
+		</script>
 		<link href="index.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+		<div id="backdrop"></div>
 		<header>
 			<h1>Fairy Dogmother</h1>
 			<h2>a home away from home</h2>
 		</header>
+		<article>
+			<p>
+				Blah blah blah blah blah. Sarah what would you like me to put here?<br />
+				Just need a wee description to describe what's happening.
+			</p>
+
+			<h2>Contact Us</h2>
+			<ul>
+				<li>
+					<label>phone</label><number>0xxx xxx xxxx</number>
+				</li>
+				<li>
+					<label>email</label><a mailto="sarah@fairy.dog">sarah@fairy.dog</a>
+				</li>
+				<li>
+					<label>facebook</label>
+					<a href="http://facebook.com/fairdog" rel="nofollow">facebook.com/fairydog</a>
+				</li>
+				<li>
+					<label>instagram</label>
+					<a href="http://instagram.com/fairydog" rel="nofollow">instagram.com/fairydog</a>
+				</li>
+				<li>
+					<br />
+					<label>address</label>
+					<span><br />
+						56 Gartcraig Road<br />
+						Glasgow, Scotland<br />
+						G33 2NR
+					</span>
+				</li>
+			</ul>
+		</article>
 		<script type="text/javascript" src="index.js"></script>
 	</body>
 </html>
